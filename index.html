@@ -20,7 +20,7 @@
             <div class="title-view">
                 <p>ここは上層（モーダルウィンドウ）です。</p>
                 <p>この上層の大きさは、base-frame クラスの大きさと同じ大きさになります（width: 100%; height: 100%; を指定しているため）。</p>
-                <button class="to-shitaji">モーダルを削除して下地を表示</button>
+                <button class="to-shitaji">モーダルをフェードアウトして下地を表示</button>
             </div>
 
             <!-- 下地のコンテンツを配置 -->
@@ -30,7 +30,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script>
-            // 上層（モーダル）を削除
+            // 上層（モーダル）をフェードアウト
             $('.to-shitaji').on('click', function () {
                 $('.title-view').fadeOut();
             });
