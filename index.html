@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Janken Fantasy 10</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- width を 380 px にして margin:0 auto で中央に配置 -->
+        <div class="base-frame">
+
+            <!-- 上層のコンテンツ（モーダルウィンドウと同じ役割） -->
+            <div class="title-view">
+                <p>ここは上層（モーダルウィンドウ）です。</p>
+                <p>この上層の大きさは、base-frame クラスの大きさ (横:380px　縦:100vh) と同じ大きさになります。</p>
+                <button class="to-shitaji"> Game Start</buitton>
+            </div>
+
+            <!-- 下地のコンテンツを配置 -->
+            <p>下地のコンテンツ</p>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
