@@ -16,7 +16,7 @@
         <!-- width を 380 px にして margin:0 auto で中央に配置 -->
         <div class="base-frame">
 
-            <!-- 上層のコンテンツ（モーダルウィンドウと同じ役割） -->
+            <!-- 上層のコンテンツ（モーダルのようなもの） -->
             <div class="title-view">
                 <p>ここは上層（モーダルウィンドウ）です。</p>
                 <p>この上層の大きさは、base-frame クラスの大きさ (横:380px　縦:100vh) と同じ大きさになります。</p>
@@ -29,7 +29,12 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
+        <script>
+            // 上層（モーダル）を削除
+            $('.to-shitaji').on('click', function () {
+                $('.title-view').fadeOut();
+            });
+        </script>
     </body>
 
 </html>
